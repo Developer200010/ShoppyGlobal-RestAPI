@@ -70,7 +70,7 @@ Built with **Node.js, Express, MongoDB, and JWT authentication**.
 ```
 ## ⚙️ Setup Environment Variables
 
-- 🔌 **PORT** = `3000`  
+- 🔌 **PORT** = `5000`  
 - 🗄️ **MONGO_URI** = `mongodb://localhost:27017/shoppyGlobal-RestAPI`  
 - 🔑 **JWT_SECRET** = `secretKey`
 

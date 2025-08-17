@@ -27,6 +27,35 @@ Built with **Node.js, Express, MongoDB, and JWT authentication**.
 | `package.json`      | Project dependencies & scripts        |
 | `README.md`         | Project documentation                 |
 
+---
+## 📖 API Endpoints
+
+### 👤 User Authentication
+| Method | Endpoint         | Description         |
+|--------|------------------|---------------------|
+| 🔑 POST | `/user/register` | 📝 Register a user  |
+| 🔐 POST | `/user/login`    | 🔓 Login a user     |
+
+---
+
+### 📦 Product API
+| Method   | Endpoint          | Description              |
+|----------|-------------------|--------------------------|
+| 🌍 GET   | `/products`       | 📋 Get all products      |
+| 🔎 GET   | `/products/:id`   | 🔍 Get product by ID     |
+| ➕ POST  | `/products`       | 🛠️ Add new product       |
+| ✏️ PUT   | `/products/:id`   | ♻️ Update existing product |
+| 🗑️ DELETE | `/products/:id`   | ❌ Delete a product       |
+
+---
+
+### 🛒 Cart API only when user is register or logged in
+| Method   | Endpoint      | Description                  |
+|----------|---------------|------------------------------|
+| 🛍️ POST  | `/cart`       | ➕ Add item to cart           |
+| 📦 GET   | `/cart`       | 📋 Get cart items             |
+| 🔄 PUT   | `/cart/:id`   | 🔢 Update cart item quantity |
+| 🗑️ DELETE | `/cart/:id`   | ❌ Remove item from cart      |
 
 
 ---

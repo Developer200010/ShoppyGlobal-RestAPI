@@ -23,7 +23,7 @@ Built with **Node.js, Express, MongoDB, and JWT authentication**.
 | `routes/`           | Express route handlers                |
 | `middleware/`       | Custom middlewares (auth, logger etc.)|
 | `config/`           | Database & JWT configurations         |
-| `app.js`            | Express app entry point               |
+| `server.js`            | Express app entry point               |
 | `package.json`      | Project dependencies & scripts        |
 | `README.md`         | Project documentation                 |
 
@@ -40,9 +40,8 @@ Built with **Node.js, Express, MongoDB, and JWT authentication**.
 3. npm install
 ```
 ## Setup Environment Variables
----
-PORT=3000
-MONGO_URI=mongodb://localhost:27017/shoppyGlobal-RestAPI
-JWT_SECRET=secretKey
----
 
+### PORT=3000
+### MONGO_URI=mongodb://localhost:27017/shoppyGlobal-RestAPI
+### JWT_SECRET=secretKey
+ ----

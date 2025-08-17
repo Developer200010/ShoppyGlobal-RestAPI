@@ -1,11 +1,11 @@
 // db.js
 const mongoose = require("mongoose");
 
-const MONGO_URI = "mongodb://localhost:27017/shoppyGlobal";
+require("dotenv").config()
 
 async function connectDB() {
   try {
-    await mongoose.connect(MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URL);
     console.log("✅ DB connected successfully");
   } catch (err) {
     console.error("❌ DB connection error:", err.message);

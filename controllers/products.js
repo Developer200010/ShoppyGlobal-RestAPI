@@ -21,6 +21,9 @@ const getProductBYId = async(req,res) =>{
     try {
         await db();
         const id = req.params.id;
+        if(!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).json({message:"invalid id format"})
+        }
         const productExist = await productModel.find({ _id: id });
         if(!productExist){
             return res.status(404).json({message:"product does not exist"});

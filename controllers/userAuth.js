@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const userModel = require("../models/userModel.js");
 const connectDB = require("../config/DB.js");
+require("dotenv").config();
 const register = async (req, res) => {
     try {
         await connectDB()
@@ -31,7 +32,7 @@ const register = async (req, res) => {
 
         const token = jwt.sign(
             { id: user._id, email: user.email },
-            "secretKey",
+            process.env.JWT_SECRET,
             { expiresIn: '1h' }
         )
         res.status(201).json({
@@ -65,7 +66,7 @@ const login = async (req,res) =>{
         }
         const token = jwt.sign(
             {id:user._id, email:user.email},
-            "secretKey",
+            process.env.JWT_SECRET,
             {expiresIn:"1h"}
         )
         res.status(200).json({

@@ -35,8 +35,8 @@ Built with **Node.js, Express, MongoDB, and JWT authentication**.
 
 ### 1️⃣ Clone Repository
 ```bash
-1. git clone https://github.com/<your-username>/shoppyGlobal-api.git
-2. cd shoppyGlobal-api
+1. https://github.com/Developer200010/ShoppyGlobal-RestAPI.git
+2. cd ShoppyGlobal-RestAPI.git
 3. npm install
 ```
 ## ⚙️ Setup Environment Variables

@@ -39,9 +39,10 @@ Built with **Node.js, Express, MongoDB, and JWT authentication**.
 2. cd shoppyGlobal-api
 3. npm install
 ```
-## Setup Environment Variables
+## ⚙️ Setup Environment Variables
 
-### PORT=3000
-### MONGO_URI=mongodb://localhost:27017/shoppyGlobal-RestAPI
-### JWT_SECRET=secretKey
+- 🔌 **PORT** = `3000`  
+- 🗄️ **MONGO_URI** = `mongodb://localhost:27017/shoppyGlobal-RestAPI`  
+- 🔑 **JWT_SECRET** = `secretKey`
+
  ----
